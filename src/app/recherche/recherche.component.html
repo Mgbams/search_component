@@ -1,0 +1,33 @@
+<!--<div>
+  <form #studentForm="ngForm" (ngSubmit)="submitForm()">
+    <p><label for="student-name">Entrez votre nom:</label></p>
+    <p>
+      <input
+        type="text"
+        [(ngModel)]="name"
+        name="student-name"
+        id="student-name"
+      />
+    </p>
+    <p><input type="submit" value="Soumettre" /></p>
+  </form>
+</div>-->
+
+<div class="container">
+  <h2>Page de recherche</h2>
+  <form #studentForm="ngForm" (ngSubmit)="submitForm()">
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Entrez votre nom:</mat-label>
+      <input
+        type="text"
+        matInput
+        [(ngModel)]="name"
+        name="student-name"
+        placeholder="Ex. kingsley"
+      />
+    </mat-form-field>
+    <div>
+      <button mat-raised-button color="primary">Soumettre</button>
+    </div>
+  </form>
+</div>

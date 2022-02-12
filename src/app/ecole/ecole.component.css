@@ -1,0 +1,25 @@
+.container {
+  margin: 30px 50px;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+p a {
+  font-size: 1.3rem;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+p a:hover {
+  font-size: 1.3rem;
+  margin-top: 20px;
+  text-decoration: underline;
+  color: blue;
+}
+
+::ng-deep .snackbar-success {
+  background-color: green;
+  color: white;
+}
